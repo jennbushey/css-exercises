@@ -10,8 +10,31 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 
+.container { /* i did it */
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+.item { 
+  /*display: flex;
+  flex-direction: column;
+  flex: 0 0 200px;
+  align-items: center;*/
+  max-width: 200px;
+
+}
+
+body { /* I had this as .text, this way aligns the images and the text to centre */
+  text-align: center;
+}
+
+`
 /* do not edit this footer */
 .footer {
   position: fixed;
