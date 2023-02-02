@@ -20,8 +20,30 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 20px; /* check */
+  display: flex; /* check */
+  gap: 20px; /* didn't include */
 }
 
+.header { /* check */
+display: flex; /* didn't include */
+font-size: 22px; /* check */
+font-weight: bold; /* check */
+/* flex: 10;  nope */
+align-items: center;
+justify-content: space-between;
+margin-bottom: 8px;
+}
+ /* no
+.two {
+  display: flex;
+  margin-bottom: 10px;
+}
+.three {
+  display: flex;
+  margin-top: 10px;
+}
+*/
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -33,6 +55,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* flex: none; */
+  flex-shrink: 0; /* didn't include */
+ /*  margin-right: 20px; nope */
+}
+
+.text { /* didn't include */
+margin-bottom: 16px; /* didn't include */
 }
 
 .close-button {
@@ -51,12 +80,14 @@ body {
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  /* display: flex; nope */ 
 }
 
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  /* margin-right: 2px; nope */
 }
 
 button.cancel {
